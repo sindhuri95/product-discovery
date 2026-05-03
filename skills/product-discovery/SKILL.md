@@ -44,6 +44,21 @@ These override the default flow when they conflict with it.
 5. **Reconcile scope and timeline.** A 30-feature PRD with a 6-week timeline is named as a contradiction before delivery.
 6. **Document what you didn't do.** Paths not taken belong in the PRD. Prevents teams re-litigating settled decisions.
 7. **Map every feature to a journey step.** Functional requirements that don't trace to a journey are scope creep.
+8. **Use structured question UX.** Use the `AskQuestion` tool (askuserquestions) for discovery prompts whenever options can be enumerated. Do not default to adding "something else" and "chat about this" to every question; only add an open option when strictly necessary after trying specific, decision-ready options first.
+
+### AskQuestion UX Rules (Mandatory)
+
+Poor question UX kills completion. Keep interaction crisp so users do not abandon the Q&A.
+
+1. **Default to `AskQuestion` for selectable prompts.** If the user is choosing role, context, trigger, prioritization, or path selection, use `AskQuestion` instead of open chat.
+2. **Offer concrete options first.** Provide the most likely 3-7 options based on phase context.
+3. **Do not always include generic catch-alls.** Never auto-append "something else" and "chat about this" on every question.
+4. **Escalate to open input only when needed.** Add an open option only if:
+   - the decision space is genuinely unknown, or
+   - the user says none of the options fit.
+5. **Use progressive fallback.** First ask with concrete options; if the user is not represented, follow up with a targeted open question.
+6. **Keep batches tight.** Ask 1-3 related questions at a time to minimize fatigue.
+7. **Handle free-text needs explicitly.** For questions requiring nuanced narrative (for example, the one-sentence product description or detailed rationale), ask directly in chat rather than forcing awkward multiple-choice.
 
 ---
 
